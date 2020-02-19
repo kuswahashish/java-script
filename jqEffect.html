@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Java Query Effect Examples.</title>
+        <link rel="stylesheet" href="css/style.css"
+    </head>
+    <body>
+
+        <h1>Effect in <br> jQuery</h1>
+        <p>This is a paragraph in Outside divison</p>
+        <div id="firstdiv" class="mydiv" >
+            <p>This is first paragraph in first divsion</p>
+            <p>This is second paragraph in first divsion</p>
+        </div>
+        <div id="seconddiv" class="mydiv" >
+            <p>This is first paragraph in second divsion</p>
+            <p>This is second paragraph in second divsion</p>
+        </div>
+
+        <div id="thirddiv" class="mydiv">
+            <ul>
+                <li>List iteam 1</li>
+                <li>List iteam 2</li>
+                <li>List iteam 3</li>
+                <li>List iteam 4</li>
+            </ul>
+        </div>
+        <div id="forthdiv">
+            <ul>
+                <li>List iteam 1</li>
+                <li>List iteam 2</li>
+                <li>List iteam 3</li>
+                <li>List iteam 4</li>
+            </ul>
+        </div>
+        <button id="btn1" >HIDE</button>
+        <button id="btn2" >SHOW</button>
+        <button id="btn3" >Toggle</button>
+        <button id="btn4" >SlideUP</button>
+        <button id="btn5" >SlideDown</button>
+        <button id="btn6" >slide Toggle</button>
+    </body>
+    <script src="jquery.js" ></script>
+    <script>
+        $(document).ready(function(){
+        
+            $("#btn1").click(function(){
+                $("#firstdiv").hide();
+            });
+            $("#btn2").click(function(){
+                $("#firstdiv").show();
+            });
+            $("#btn3").click(function(){
+                $("#firstdiv").toggle();
+            });
+            $("#btn4").click(function(){
+                $("#firstdiv").slideUp();
+            });
+            $("#btn5").click(function(){
+                $("#firstdiv").slideDown();
+            });
+            $("#btn6").click(function(){
+                $("#firstdiv").slideToggle();
+            });
+        //FADE IN ?OUT AND TOGGLE IS A PART OF THIS EFFECT 
+        });
+    </script>
+</html>
