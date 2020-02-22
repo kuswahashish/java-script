@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Java Query animation Effect Examples.</title>
+        <link rel="stylesheet" href="css/style.css"
+    </head>
+    <body>
+
+        <h1>animation() Effect in jQuery</h1>
+        <p>This is a paragraph in Outside divison</p>
+        <button id="btn1" >ClickME</button>
+        <button id="btn2" >ClickME</button>
+        <button id="btn3" >Animate</button>
+
+        <div id="firstdiv" class="mydiv" >
+            <p>This is first paragraph in first divsion</p>
+            <p>This is second paragraph in first divsion</p>
+        </div>
+        <div id="seconddiv" class="mydiv" >
+            <p>This is first paragraph in second divsion</p>
+           <!-- <p>This is second paragraph in second divsion</p>
+       --> </div>
+
+        <div id="thirddiv" class="mydiv">
+            <ul>
+                <li>List iteam 1</li>
+                <li>List iteam 2</li>
+                <li>List iteam 3</li>
+                <li>List iteam 4</li>
+            </ul>
+        </div>
+        <div id="cube" class="mycube">
+            <p style="color: black;"><b></b> CUBE</p>
+        </div>
+    </body>
+    <script src="jquery.js" ></script>
+    <script>     
+      
+      $(document).ready(function(){
+          $("#btn3").click(function(){
+              $("#cube").animate({
+                  left : '150px',
+                  opacity :'1',
+                  width : '100px',
+                  height : '100px'
+              },1000)
+          })
+      })
+    </script>
+</html>
