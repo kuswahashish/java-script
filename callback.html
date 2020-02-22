@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Java Query animation Effect Examples.</title>
+        <link rel="stylesheet" href="css/style.css"
+    </head>
+    <body>
+
+        <h1>Callback and chaining jQuery</h1>
+        <p>This is a paragraph in Outside divison</p>
+       
+        <button id="Fadetoggle" >FadeToggle</button>
+        <button id="Slidetoggle" >SlideToggle</button>
+
+        <div id="firstdiv" class="mydiv" >
+            <p>This is first paragraph in first divsion</p>
+            <p>This is second paragraph in first divsion</p>
+        </div>
+        <div id="seconddiv" class="mydiv" >
+            <p>This is first paragraph in second divsion</p>
+           <!-- <p>This is second paragraph in second divsion</p>
+       --> </div>  </body>
+    <script src="jquery.js" ></script>
+    <script>     
+      
+      $(document).ready(function(){
+        $("#Slidetoggle").click(function(){
+            $("#firstdiv").slideToggle(3000,function(){
+                alert("Slide Effect Applied!");         
+            });
+          });
+          $("#Fadetoggle").click(function(){
+            $("#firstdiv").fadeToggle(3000,function(){
+                alert("Fade Effect Applied!");         
+            });
+          });
+      });
+      //Chaining means applying more than one effect in single line using dor(.) symbol..!!
+    </script>
+</html>
