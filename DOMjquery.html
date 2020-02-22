@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Java Query DOM manipulation Examples.</title>
+        <link rel="stylesheet" href="css/style.css"
+    </head>
+    <body>
+
+        <h1>jQuery - DOM manipulation</h1>
+        <p>This is a paragraph in Outside divison</p>
+        <button id="Fadetoggle" >Fadetoggle</button>
+        <button id="Slidetoggle" >Slidetoggle</button>
+        <br>
+        <br>
+        <button id="btn1" >Append</button>
+        <button id="btn2" >After</button>
+        <button id="btn3" >Prepand</button>
+        <button id="btn4" >Before</button><br><br>
+        <button id="btn5" >Remove</button>
+        <button id="btn6" >Empty</button>
+
+        <div id="firstdiv" class="mydiv" >
+            <p id="p1" class="p1class" value="hello world" >This is first paragraph in first divsion</p>
+        </div><script src="jquery.js" ></script>
+        <script>     
+          
+          $(document).ready(function(){
+              
+            $("#btn1").click(function(){
+                $("#div1").append("<p>This is 2nd para in 1st division</p>"); 
+            });
+
+
+            $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#div1").after("<p>This is 2nd para in 1st division</p>"); 
+            });
+
+
+            $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("#div1").prepend("<p>This is 2nd para in 1st division</p>"); 
+            });
+
+            
+          $(document).ready(function(){
+            $("#btn4").click(function(){
+                $("#div1").before("<p>This is 2nd para in 1st division</p>"); 
+            });
+
+            
+          $(document).ready(function(){
+            $("#btn5").click(function(){
+                $("#div1").remove("<p>This is 2nd para in 1st division</p>"); 
+            });
+
+            
+          $(document).ready(function(){
+            $("#btn6").click(function(){
+                $("#div1").empty("<p>This is 2nd para in 1st division</p>"); 
+            });
+
+            $("#Slidetoggle").click(function(){
+                $("#firstdiv").slideToggle(3000,function(){
+                    //alert("Slide Effect Applied!");         
+                });
+              });
+              $("#Fadetoggle").click(function(){
+                $("#firstdiv").fadeToggle(3000,function(){
+                   // alert("Fade Effect Applied!");         
+                });
+              });
+          });
+          //Chaining means applying more than one effect in single line using dor(.) symbol..!!
+        </script>
+    </html>
