@@ -13,8 +13,8 @@
         <br>
         <button id="btn1" >Append</button>
         <button id="btn2" >After</button>
-        <button id="btn3" >Prepand</button>
-        <button id="btn4" >Before</button><br><br>
+        <button id="btn3" >Prepand</button><br><br>
+        <button id="btn4" >Before</button>
         <button id="btn5" >Remove</button>
         <button id="btn6" >Empty</button>
 
@@ -26,49 +26,37 @@
           $(document).ready(function(){
               
             $("#btn1").click(function(){
-                $("#div1").append("<p>This is 2nd para in 1st division</p>"); 
+                $("#firstdiv").append("<p><b>Append button Clicked!</p>"); 
             });
 
-
-            $(document).ready(function(){
             $("#btn2").click(function(){
-                $("#div1").after("<p>This is 2nd para in 1st division</p>"); 
-            });
+                $("#firstdiv").after("<p><b>After button Clicked!</p>");             })
 
-
-            $(document).ready(function(){
             $("#btn3").click(function(){
-                $("#div1").prepend("<p>This is 2nd para in 1st division</p>"); 
-            });
+                $("#firstdiv").prepend("Prepend button Cliked!"); 
+            })
 
-            
-          $(document).ready(function(){
             $("#btn4").click(function(){
-                $("#div1").before("<p>This is 2nd para in 1st division</p>"); 
-            });
-
+                $("#firstdiv").before("<p>This is 2nd para in 1st division</p>"); 
+            })
             
-          $(document).ready(function(){
             $("#btn5").click(function(){
-                $("#div1").remove("<p>This is 2nd para in 1st division</p>"); 
-            });
-
+                $("firstdiv").remove("#p"); 
+            })
             
-          $(document).ready(function(){
+
             $("#btn6").click(function(){
-                $("#div1").empty("<p>This is 2nd para in 1st division</p>"); 
+                $("#firstdiv").empty(); 
+            })
+
+            $("Slidetoggle").click(function(){
+              $("#firstdiv").slideToggle(1000);
             });
 
-            $("#Slidetoggle").click(function(){
-                $("#firstdiv").slideToggle(3000,function(){
-                    //alert("Slide Effect Applied!");         
-                });
-              });
-              $("#Fadetoggle").click(function(){
-                $("#firstdiv").fadeToggle(3000,function(){
-                   // alert("Fade Effect Applied!");         
-                });
-              });
+            $("#Fadetoggle").click(function(){
+              $("#firstdiv").fadeToggle(1000); 
+            });
+    
           });
           //Chaining means applying more than one effect in single line using dor(.) symbol..!!
         </script>
