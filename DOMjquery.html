@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="css/style.css"
     </head>
     <body>
-
         <h1>jQuery - DOM manipulation</h1>
         <p>This is a paragraph in Outside divison</p>
         <button id="Fadetoggle" >Fadetoggle</button>
@@ -17,10 +16,13 @@
         <button id="btn4" >Before</button>
         <button id="btn5" >Remove</button>
         <button id="btn6" >Empty</button>
-
+        <div id="hdiv">
         <div id="firstdiv" class="mydiv" >
             <p id="p1" class="p1class" value="hello world" >This is first paragraph in first divsion</p>
-        </div><script src="jquery.js" ></script>
+        </div>
+      </div>
+        </body>
+        <script src="jquery.js" ></script>
         <script>     
           
           $(document).ready(function(){
@@ -33,20 +35,20 @@
                 $("#firstdiv").after("<p><b>After button Clicked!</p>");             })
 
             $("#btn3").click(function(){
-                $("#firstdiv").prepend("Prepend button Cliked!"); 
+                $("#firstdiv").prepend("<p><b>Prepend button Cliked!</p>"); 
             })
 
             $("#btn4").click(function(){
-                $("#firstdiv").before("<p>This is 2nd para in 1st division</p>"); 
+                $("#firstdiv").before("<p>Before button Clicked/p>"); 
             })
             
             $("#btn5").click(function(){
-                $("firstdiv").remove("#p"); 
+                $("p").remove(); 
             })
             
 
             $("#btn6").click(function(){
-                $("#firstdiv").empty(); 
+                $("#hdiv").empty(); 
             })
 
             $("Slidetoggle").click(function(){

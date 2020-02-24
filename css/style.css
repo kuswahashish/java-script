@@ -18,3 +18,12 @@ div li{
     position : absolute;
     padding: 50px;
 }
+.newdivclass{
+    border-radius: 10px;
+    background-color:aqua;
+}
+.newparaclass
+{
+    font-weight: bold;
+    color: brown;
+}
