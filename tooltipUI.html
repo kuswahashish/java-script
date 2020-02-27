@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>jquery UI IntroductionToolTip </title>
+    <link rel="stylesheet"  href="css/style.css" >
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+<body>
+    <div id="mydiv" class="mydiv">
+        <h2>Tool Tip Jquery UI</h2>
+        <img src="img/img2.jpg" title="" width="400px" id="mypic">
+    </div>
+</body>
+<script src="jquery.js" type="text/javascript" ></script>
+<script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+<script>
+    $("img").tooltip({
+        //track : true, to track cursor onpic
+        content : "IronMan",
+       // show : {effect:"bounce",duration : 2000}effect 1
+        //show : {effect:"pulsate",duration : 2000}effect 2 
+        show : {effect:"bounce",duration : 2000},//theres bline one more
+        hide : {effect : "explode",duration : 2000}//have 4 effect same as show
+});
+</script>
+</html>
