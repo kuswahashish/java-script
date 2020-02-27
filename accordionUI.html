@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>jquery UI IntroductionToolTip </title>
+    <link rel="stylesheet"  href="css/style.css" >
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+<body>
+<div id="panel" >
+    <h3>javascript Learning</h3>
+    <p>JavaScript is the lightweight and interpreted,object-oriented language.</p>
+    <h3>jquery</h3>
+    <p>Jquery is the inbuild js file created by developers to help and use inbuild functionalities.!</p>
+    <h3>Ashis Kuswah</h3>
+    <p>
+        I enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascript
+        I enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascript
+        I enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascript
+        I enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascript
+        I enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascriptI enjoyed this journey to learn javascript
+    </p> 
+</div>
+</body>
+<script src="jquery.js" type="text/javascript" ></script>
+<script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+<script>
+    $("#panel").accordion({
+        collapsible:true,
+        //event :"mouseover",//click is also event any event will be there check
+        animate : 500,
+        heightStyle : true,
+        icons: {header : "ui-icon-plus",activeHeader : "ui-icon-minus"}
+        //active : 1 for activate any index of content
+        
+    });
+</script>
+</html>
