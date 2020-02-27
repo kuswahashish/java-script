@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>jquery UI Introduction</title>
+    <link rel="stylesheet"  href="css/style.css" >
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+<body>
+    <div id="mydiv" class="mydiv">
+        <h2>Introduction to jquery UI</h2>
+        <input id="dateinput" type="text" placeholder="Click to select Date"
+    </div>
+</body>
+<script src="jquery.js" type="text/javascript" ></script>
+<script src="jqueryui/jquery-ui.js" type="text/javascript"></script>
+<script>
+    $("#dateinput").datepicker({
+        changeYear : true,
+        changeMonth : true,
+        showOtherMonths : true,
+        minDate : new Date(1998,12,29),
+        maxDate : new Date(2020,2,27)
+    });
+</script>
+</html>
